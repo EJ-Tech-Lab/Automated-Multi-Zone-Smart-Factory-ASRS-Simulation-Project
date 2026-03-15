@@ -1,4 +1,4 @@
-# Automated Multi-Zone Smart Factory ASRS Simulation Project
+# Automated Multi-Zone Smart Factory & ASRS Simulation Project
 ## System Overview
 
 This project simulates a fully automated production line developed using Siemens TIA Portal and Factory I/O.
