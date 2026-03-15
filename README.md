@@ -2,6 +2,7 @@
 ## System Overview
 
 This project simulates a fully automated production line developed using Siemens TIA Portal and Factory I/O.
+
 The system produces a final product by:
 - Inspecting incoming raw materials.
 - Manufacturing components (lids and bases).
@@ -29,7 +30,9 @@ Those screens are:
 ### Purpose
 
 Zone 1 is responsible for introducing raw materials into the production line and verifying their validity before processing.
+
 Incoming items undergo two inspection steps:
+
 - Weight verification
 - Visual verification using a vision sensor
 - Items that fail inspection are automatically rejected.
