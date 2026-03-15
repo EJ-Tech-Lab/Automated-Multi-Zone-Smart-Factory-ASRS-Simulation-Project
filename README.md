@@ -3,10 +3,10 @@
 
 This project simulates a fully automated production line developed using Siemens TIA Portal and Factory I/O.
 The system produces a final product by:
-1- Inspecting incoming raw materials.
-2- Manufacturing components (lids and bases).
-3- Buffering production to stabilize flow.
-4- Assembling components into the final product.
+- Inspecting incoming raw materials.
+- Manufacturing components (lids and bases).
+- Buffering production to stabilize flow.
+- Assembling components into the final product.
 
 These steps are then followed by palletizing and storing the products.
 
@@ -56,9 +56,9 @@ Rejected items are directed to a discard line.
 ### Flow Control
 
 To prevent congestion and maintain deterministic behavior:
--Only one item is allowed per production line
--A new raw item is released only when Zone 2 recieves an item.
--The zone includes a reset routine to clear system state after faults
+- Only one item is allowed per production line
+- A new raw item is released only when Zone 2 recieves an item.
+- The zone includes a reset routine to clear system state after faults
 
 ## Zone 2 — Machining
 
@@ -71,11 +71,11 @@ Line B	==> Bases
 
 ### Process Flow
 
-1- Raw material arrives from Zone 1.
-2- The machine detects the item using an input sensor.
-3- The machining process is triggered.
-4- After processing is complete, the component is placed on the output conveyor.
-The finished component moves toward the buffering system in Zone 3.
+- Raw material arrives from Zone 1.
+- The machine detects the item using an input sensor.
+- The machining process is triggered.
+- After processing is complete, the component is placed on the output conveyor.
+- The finished component moves toward the buffering system in Zone 3.
 
 ## Zone 3 — Buffering & Assembly
 
