@@ -350,3 +350,27 @@ Manual control capabilities are provided for:
 - Stacker crane
 
 Manual operation is only allowed after a safe transition from automatic mode to maintenance mode, ensuring safe machine interaction.
+
+## System Reliability Features
+
+All zones in the system include safety and reliability mechanisms.
+
+### Emergency Handling
+
+Each zone can respond to emergency events by:
+
+- Immediately stopping motion
+- Resetting internal machine states
+- Safely halting product flow
+
+### Watchdog Monitoring
+
+Each zone contains a watchdog timer that monitors machine state progression.
+
+If a machine remains in the same state longer than expected:
+
+- A fault condition is triggered
+- The zone stops operation
+- An alarm is generated for the HMI
+
+This prevents situations where machines become stuck due to sensor failure or mechanical blockage.
